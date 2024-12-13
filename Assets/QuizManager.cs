@@ -8,9 +8,14 @@ public class QuizManager : MonoBehaviour
     public TMP_Text questionText; // TextMeshPro for displaying the question
     public Button[] answerButtons; // Buttons for answer options
     public TMP_Text scoreText; // TextMeshPro for displaying the score
+    public GameObject endOfTestButton;
 
     [Header("Quiz Data")]
     public Question[] questions; // Array of questions
+
+    [Header("Saved Data")]
+    public GameObject dataObj;
+    public int testNum;
 
     private int currentQuestionIndex = 0; // Index of the current question
     private int totalScore = 0; // Total score based on answer values
@@ -71,10 +76,27 @@ public class QuizManager : MonoBehaviour
 
     private void EndQuiz()
     {
-        questionText.text = "Quiz Complete! Your total score: " + totalScore;
+        questionText.text = "Test complete. Please return to the dashboard.";
         foreach (Button button in answerButtons)
         {
             button.gameObject.SetActive(false);
+        }
+        endOfTestButton.SetActive(true);
+        if (testNum == 1)
+        {
+            dataObj.GetComponent<DataScript>().testOneScore = totalScore;
+        }
+        if (testNum == 2)
+        {
+            dataObj.GetComponent<DataScript>().testTwoScore = totalScore;
+        }
+        if (testNum == 3)
+        {
+            dataObj.GetComponent<DataScript>().testThreeScore = totalScore;
+        }
+        if (testNum == 4)
+        {
+            dataObj.GetComponent<DataScript>().testFourScore = totalScore;
         }
     }
 }
