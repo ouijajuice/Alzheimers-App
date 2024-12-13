@@ -22,6 +22,7 @@ public class QuizManager : MonoBehaviour
 
     private void Start()
     {
+        dataObj = GameObject.FindWithTag("Data");
         DisplayQuestion();
     }
 
