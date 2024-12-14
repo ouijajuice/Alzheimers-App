@@ -10,6 +10,13 @@ public class DataScript : MonoBehaviour
     public double testFourScore;
     public double resultScore;
     public int age;
+    public double smokingRisk;
+    public double alcoholRisk;
+    public double sleepRisk;
+    public double exerciseRisk;
+    public double familyHistoryRisk;
+    public double cognitiveScore;
+
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);

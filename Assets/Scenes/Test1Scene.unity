@@ -1819,13 +1819,17 @@ MonoBehaviour:
   scoreText: {fileID: 526960398}
   endOfTestButton: {fileID: 416396951}
   questions:
-  - question: 1+1
+  - question: How many cigarettes do you smoke in a day?
     answers:
+    - None
+    - 1-2
+    - 3-10
+    - 11+
+    answerValues:
     - 1
-    - 2
-    - 3
-    - 4
-    answerValues: 00000000050000000000000000000000
+    - 1.2
+    - 1.5
+    - 1.9
   dataObj: {fileID: 0}
   testNum: 1
 --- !u!114 &905671672

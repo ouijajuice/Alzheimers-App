@@ -18,7 +18,7 @@ public class QuizManager : MonoBehaviour
     public int testNum;
 
     private int currentQuestionIndex = 0; // Index of the current question
-    private int totalScore = 0; // Total score based on answer values
+    private double totalScore = 0; // Total score based on answer values
 
     private void Start()
     {
@@ -107,5 +107,5 @@ public class Question
 {
     public string question; // The question text
     public string[] answers; // The answer options
-    public int[] answerValues; // The values assigned to each answer
+    public double[] answerValues; // The values assigned to each answer
 }
