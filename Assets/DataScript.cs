@@ -9,6 +9,7 @@ public class DataScript : MonoBehaviour
     public double testThreeScore;
     public double testFourScore;
     public double resultScore;
+    public int age;
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);
