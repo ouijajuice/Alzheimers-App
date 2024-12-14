@@ -3,12 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ResultsCalculations : MonoBehaviour
 {
     public TMP_Text percentageText; // Text field for displaying the percentage score
     public TMP_Text messageText;    // Text field for displaying the message
-
+    public Image radialFillImage;
     public float risk;
     public int age;
     public double score;
@@ -52,27 +53,13 @@ public class ResultsCalculations : MonoBehaviour
         // Calculate percentage
         float percentage = (float)(score / 400.0 * 100);
 
+        radialFillImage.fillAmount = percentage / 100.0f;
+
         // Update the percentage text
         if (percentageText != null)
         {
-            percentageText.text = "Score: " + percentage.ToString("F2") + "%";
+            percentageText.text = percentage.ToString("F2") + "%";
         }
-
-        // Determine the message based on risk or score and update the message text
-        if (messageText != null)
-        {
-            if (percentage >= 75)
-            {
-                messageText.text = "Great job! Your risk is low.";
-            }
-            else if (percentage >= 50)
-            {
-                messageText.text = "Good effort, but there's room for improvement.";
-            }
-            else
-            {
-                messageText.text = "Consider focusing on improvement areas.";
-            }
-        }
+        
     }
 }
