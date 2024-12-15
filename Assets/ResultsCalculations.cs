@@ -11,7 +11,7 @@ public class ResultsCalculations : MonoBehaviour
     public TMP_Text messageText;     // Text field for displaying the message
     public Image radialFillImage;    // Image to display the radial fill
     public float risk;               // Final calculated Alzheimer's risk
-    public int age;                  // Age of the user
+    public double age;                  // Age of the user
     public double cognitiveScore;    // Cognitive test score
     public double lifestyleScore;    // Lifestyle-related score
     private DataScript data;

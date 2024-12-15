@@ -1158,8 +1158,8 @@ MonoBehaviour:
     m_NormalColor: {r: 0.37254903, g: 0.41176474, b: 0.21176472, a: 1}
     m_HighlightedColor: {r: 0.26237163, g: 0.28930807, b: 0.15193221, a: 1}
     m_PressedColor: {r: 0.18822321, g: 0.20754719, b: 0.108994894, a: 1}
-    m_SelectedColor: {r: 0.2627451, g: 0.2901961, b: 0.15294118, a: 1}
-    m_DisabledColor: {r: 0.18823531, g: 0.20784315, b: 0.10980393, a: 0.5019608}
+    m_SelectedColor: {r: 0.37254903, g: 0.41176474, b: 0.21176472, a: 1}
+    m_DisabledColor: {r: 0.37254903, g: 0.41176474, b: 0.21176472, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -1819,17 +1819,118 @@ MonoBehaviour:
   scoreText: {fileID: 526960398}
   endOfTestButton: {fileID: 416396951}
   questions:
-  - question: How many cigarettes do you smoke in a day?
+  - question: Which of the following is a fruit?
     answers:
-    - None
-    - 1-2
-    - 3-10
-    - 11+
+    - Apple
+    - Carrot
+    - Potato
+    - Table
     answerValues:
+    - 0
+    - 2
+    - 3
+    - 5
+  - question: If you have 3 apples and take away 1, how many do you have left?
+    answers:
+    - 2
     - 1
-    - 1.2
-    - 1.5
-    - 1.9
+    - 0
+    - Unsure
+    answerValues:
+    - 0
+    - 2
+    - 4
+    - 5
+  - question: Which of these is most similar to dog?
+    answers:
+    - Cat
+    - Chair
+    - Tree
+    - Unsure
+    answerValues:
+    - 0
+    - 2
+    - 4
+    - 5
+  - question: 'What comes next in this sequence: 2, 4, 6, 8, ___?'
+    answers:
+    - 10
+    - 9
+    - 12
+    - Unsure
+    answerValues:
+    - 0
+    - 2
+    - 4
+    - 5
+  - question: Which of these is a color?
+    answers:
+    - Blue
+    - Dog
+    - Window
+    - Unsure
+    answerValues:
+    - 0
+    - 2
+    - 4
+    - 5
+  - question: 'If all apples are fruits and all fruits are food, then all apples
+      are:'
+    answers:
+    - Food
+    - Vegetables
+    - Drinks
+    - Unsure
+    answerValues:
+    - 0
+    - 2
+    - 4
+    - 5
+  - question: What is 10 minus 3?
+    answers:
+    - 7
+    - 6
+    - 5
+    - Unsure
+    answerValues:
+    - 0
+    - 2
+    - 4
+    - 5
+  - question: Which of these is used to write?
+    answers:
+    - Pencil
+    - Spoon
+    - Cup
+    - Unsure
+    answerValues:
+    - 0
+    - 2
+    - 4
+    - 5
+  - question: If you have 5 candies and someone gives you 3 more, how many do you
+      have in total?
+    answers:
+    - 8
+    - 10
+    - 5
+    - Unsure
+    answerValues:
+    - 0
+    - 2
+    - 4
+    - 5
+  - question: How many sides does a triangle have?
+    answers:
+    - 3
+    - 4
+    - 5
+    - Unsure
+    answerValues:
+    - 0
+    - 2
+    - 4
+    - 5
   dataObj: {fileID: 0}
   testNum: 1
 --- !u!114 &905671672
@@ -2508,8 +2609,8 @@ MonoBehaviour:
     m_NormalColor: {r: 0.37254903, g: 0.41176474, b: 0.21176472, a: 1}
     m_HighlightedColor: {r: 0.26237163, g: 0.28930807, b: 0.15193221, a: 1}
     m_PressedColor: {r: 0.18822321, g: 0.20754719, b: 0.108994894, a: 1}
-    m_SelectedColor: {r: 0.2627451, g: 0.2901961, b: 0.15294118, a: 1}
-    m_DisabledColor: {r: 0.18823531, g: 0.20784315, b: 0.10980393, a: 0.5019608}
+    m_SelectedColor: {r: 0.37254903, g: 0.41176474, b: 0.21176472, a: 1}
+    m_DisabledColor: {r: 0.37254903, g: 0.41176474, b: 0.21176472, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -3493,8 +3594,8 @@ MonoBehaviour:
     m_NormalColor: {r: 0.37254903, g: 0.41176474, b: 0.21176472, a: 1}
     m_HighlightedColor: {r: 0.26237163, g: 0.28930807, b: 0.15193221, a: 1}
     m_PressedColor: {r: 0.18822321, g: 0.20754719, b: 0.108994894, a: 1}
-    m_SelectedColor: {r: 0.2627451, g: 0.2901961, b: 0.15294118, a: 1}
-    m_DisabledColor: {r: 0.18823531, g: 0.20784315, b: 0.10980393, a: 0.5019608}
+    m_SelectedColor: {r: 0.37254903, g: 0.41176474, b: 0.21176472, a: 1}
+    m_DisabledColor: {r: 0.37254903, g: 0.41176474, b: 0.21176472, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -4016,8 +4117,8 @@ MonoBehaviour:
     m_NormalColor: {r: 0.37254903, g: 0.41176474, b: 0.21176472, a: 1}
     m_HighlightedColor: {r: 0.26237163, g: 0.28930807, b: 0.15193221, a: 1}
     m_PressedColor: {r: 0.18822321, g: 0.20754719, b: 0.108994894, a: 1}
-    m_SelectedColor: {r: 0.2627451, g: 0.2901961, b: 0.15294118, a: 1}
-    m_DisabledColor: {r: 0.18823531, g: 0.20784315, b: 0.10980393, a: 0.5019608}
+    m_SelectedColor: {r: 0.37254903, g: 0.41176474, b: 0.21176472, a: 1}
+    m_DisabledColor: {r: 0.37254903, g: 0.41176474, b: 0.21176472, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:

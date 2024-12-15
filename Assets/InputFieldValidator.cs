@@ -9,6 +9,7 @@ public class InputFieldValidator : MonoBehaviour
     public InputField inputField2;
     public Button submitButton;
     public GameObject incorrectText;
+    public Button signUpButton;
 
     [Header("Validation Parameters")]
     public string validInput1 = "CorrectValue1";
@@ -28,12 +29,19 @@ public class InputFieldValidator : MonoBehaviour
 
         // Add button click event listener
         submitButton.onClick.AddListener(ValidateAndTransition);
+        signUpButton.onClick.AddListener(ChangeValidation);
     }
 
     // Enable button only if both input fields are not empty
     private void CheckFields()
     {
         submitButton.interactable = !string.IsNullOrEmpty(inputField1.text) && !string.IsNullOrEmpty(inputField2.text);
+    }
+
+    private void ChangeValidation()
+    {
+        validInput1 = inputField1.text;
+        validInput2 = inputField2.text;
     }
 
     // Validate inputs and transition to the next scene

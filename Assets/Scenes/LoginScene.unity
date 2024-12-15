@@ -151,11 +151,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 126aca42c4d227842b56ab781e0a420f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  testOneScore: 0
-  testTwoScore: 0
-  testThreeScore: 0
-  testFourScore: 0
-  resultScore: 0
+  age: 0
+  smokingRisk: 0
+  alcoholRisk: 0
+  sleepRisk: 0
+  exerciseRisk: 0
+  familyHistoryRisk: 0
+  cognitiveScore: 0
 --- !u!4 &33392609
 Transform:
   m_ObjectHideFlags: 0
@@ -518,6 +520,7 @@ MonoBehaviour:
   inputField2: {fileID: 6132556368333692686}
   submitButton: {fileID: 6132556367752236166}
   incorrectText: {fileID: 525070951}
+  signUpButton: {fileID: 6132556367225132283}
   validInput1: Admin
   validInput2: Pass123
   nextSceneName: DashboardScene

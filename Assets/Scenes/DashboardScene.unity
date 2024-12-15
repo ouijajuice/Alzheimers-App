@@ -734,7 +734,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 626132237}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 905671671}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: MainMenu
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ResultsScene
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &626132237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -791,7 +803,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &854583757
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1057,7 +1069,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 950109471}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 905671671}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: MainMenu
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Test1Scene
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &950109471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1351,7 +1375,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1049858691
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1546,7 +1570,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Test1Scene
+          m_StringArgument: CognitiveTest
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1070340993
@@ -1990,7 +2014,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2014685589
 RectTransform:
   m_ObjectHideFlags: 0

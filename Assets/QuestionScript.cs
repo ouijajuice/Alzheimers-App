@@ -19,6 +19,7 @@ public class QuestionScript : MonoBehaviour
     public bool sleep;
     public bool exercise;
     public bool familyHistory;
+    public bool age;
 
     private void Start()
     {
@@ -63,6 +64,10 @@ public class QuestionScript : MonoBehaviour
         if (familyHistory)
         {
             dataScript.familyHistoryRisk = answerValues[index];
+        }
+        if (age)
+        {
+            dataScript.age = answerValues[index];
         }
         buttonPressed = true;
     }

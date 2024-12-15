@@ -66,13 +66,14 @@ public class QuizManager : MonoBehaviour
         totalScore += questions[currentQuestionIndex].answerValues[answerIndex];
 
         currentQuestionIndex++;
-        UpdateScoreText();
+        UpdateScore();
         DisplayQuestion();
     }
 
-    private void UpdateScoreText()
+    private void UpdateScore()
     {
         scoreText.text = "Score: " + totalScore;
+        dataObj.GetComponent<DataScript>().cognitiveScore = totalScore;
     }
 
     private void EndQuiz()
@@ -83,22 +84,7 @@ public class QuizManager : MonoBehaviour
             button.gameObject.SetActive(false);
         }
         endOfTestButton.SetActive(true);
-        if (testNum == 1)
-        {
-            dataObj.GetComponent<DataScript>().testOneScore = totalScore;
-        }
-        if (testNum == 2)
-        {
-            dataObj.GetComponent<DataScript>().testTwoScore = totalScore;
-        }
-        if (testNum == 3)
-        {
-            dataObj.GetComponent<DataScript>().testThreeScore = totalScore;
-        }
-        if (testNum == 4)
-        {
-            dataObj.GetComponent<DataScript>().testFourScore = totalScore;
-        }
+        dataObj.GetComponent<DataScript>().cognitiveScore = totalScore;
     }
 }
 
